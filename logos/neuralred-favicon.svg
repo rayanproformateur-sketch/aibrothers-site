@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="nrf-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8714A"/>
+      <stop offset="100%" stop-color="#C45A38"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#nrf-bg)"/>
+  <g transform="translate(32, 32)" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round">
+    <path d="M-2 -14 C-12 -14 -18 -8 -18 -2 C-20 -2 -22 2 -20 6 C-22 8 -20 14 -14 14 C-12 16 -6 16 -4 14"/>
+    <path d="M-2 -14 L-2 14"/>
+    <path d="M-2 -4 C-10 -4 -14 -2 -14 2"/>
+    <path d="M-2 4 C-8 4 -12 6 -12 10"/>
+    <path d="M2 -14 C12 -14 18 -8 18 -2 C20 -2 22 2 20 6 C22 8 20 14 14 14 C12 16 6 16 4 14"/>
+    <path d="M2 -14 L2 14"/>
+    <path d="M2 -4 C10 -4 14 -2 14 2"/>
+    <path d="M2 4 C8 4 12 6 12 10"/>
+  </g>
+</svg>
