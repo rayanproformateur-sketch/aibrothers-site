@@ -122,6 +122,15 @@
         .reveal.visible{opacity:1;transform:translateY(0)}
 
         
+        
+        /* CUSTOM PRICING */
+        .pricing-custom-box{max-width:640px;margin:0 auto;background:var(--bg-card);border:1px solid var(--border);border-radius:24px;padding:3rem;text-align:center;transition:all .35s}
+        .pricing-custom-box:hover{box-shadow:0 12px 40px rgba(0,0,0,.08);border-color:var(--accent)}
+        .pricing-custom-icon{color:var(--accent);margin-bottom:1.2rem}
+        .pricing-custom-box h3{font-family:var(--font-title);font-size:2.2rem;font-weight:900;color:var(--text);margin-bottom:.8rem}
+        .pricing-custom-box>p{font-size:.95rem;color:var(--text-muted);line-height:1.7;max-width:480px;margin:0 auto 2rem}
+        .pricing-custom-includes{display:flex;flex-direction:column;gap:.6rem;text-align:left;max-width:440px;margin:0 auto}
+        .pricing-custom-item{display:flex;align-items:center;gap:.6rem;font-size:.88rem;color:var(--text-muted)}
         /* PRICING */
         .pricing-section{padding:100px 2rem}
         .pricing-toggle{display:flex;align-items:center;gap:1rem;justify-content:center;margin-bottom:3rem}
@@ -259,54 +268,21 @@
         <section class="pricing-section" id="tarifs">
             <div class="section-container">
                 <div class="section-label"><span class="line"></span> Tarifs</div>
-                <h2 class="section-title reveal">Des tarifs simples et transparents.</h2>
-                <p class="section-desc reveal">Choisissez le plan adapté à vos besoins. Sans engagement, évolutif à tout moment.</p>
-                <div class="pricing-toggle reveal">
-                    <span class="toggle-label active" data-period="monthly">Mensuel</span>
-                    <button class="toggle-switch" id="pricingToggle" aria-label="Basculer annuel/mensuel"><span class="toggle-knob"></span></button>
-                    <span class="toggle-label" data-period="annual">Annuel <span class="pricing-save">-20%</span></span>
+                <h2 class="section-title reveal">Tarification sur mesure.</h2>
+                <p class="section-desc reveal">Chaque infrastructure est unique. Nos audits sont dimensionnés selon votre périmètre, vos assets et vos exigences de conformité.</p>
+                <div class="pricing-custom-box reveal">
+                    <div class="pricing-custom-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:48px;height:48px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg></div>
+                    <h3>Sur devis</h3>
+                    <p>Nous analysons votre périmètre (nombre de domaines, assets, fréquence des scans, exigences réglementaires) et vous proposons une offre adaptée.</p>
+                    <div class="pricing-custom-includes">
+                        <div class="pricing-custom-item"><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;color:var(--accent)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>4 agents IA spécialisés (CERVEAU, RECON, EXPLOIT, REPORT)</div>
+                        <div class="pricing-custom-item"><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;color:var(--accent)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Rapports conformes ISO 27001 / MITRE ATT&CK</div>
+                        <div class="pricing-custom-item"><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;color:var(--accent)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Déploiement cloud ou on-premise</div>
+                        <div class="pricing-custom-item"><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;color:var(--accent)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SSO / SAML & SLA dédié disponibles</div>
+                        <div class="pricing-custom-item"><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;color:var(--accent)"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>1er scan offert pour évaluer votre surface d'attaque</div>
+                    </div>
+                    <a href="https://calendly.com/brothersai" target="_blank" rel="noopener" class="btn-primary" style="margin-top:1.5rem">Demander un devis →</a>
                 </div>
-                <div class="pricing-grid">
-                    <article class="pricing-card reveal">
-                        
-                        <div class="pricing-header">
-                            <h3>Basic</h3>
-                            <p class="pricing-target">PME / Startups</p>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="pricing-price"><span class="price-amount" data-monthly="149" data-annual="124">149 €</span><span class="price-period">/mois</span></div>
-                            <div class="pricing-annual">ou 1 490 €/an <span class="pricing-save">(-20%)</span></div>
-                            <ul class="pricing-features"><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>1 scan/mois</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Rapport automatisé</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>1 domaine</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Agents RECON + REPORT</li></ul>
-                        </div>
-                        <a href="https://calendly.com/brothersai" target="_blank" rel="noopener" class="pricing-cta">Commencer →</a>
-                    </article>
-                    <article class="pricing-card popular reveal">
-                        <div class="pricing-popular">Le + populaire</div>
-                        <div class="pricing-header">
-                            <h3>Pro</h3>
-                            <p class="pricing-target">ETI / Scale-ups</p>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="pricing-price"><span class="price-amount" data-monthly="449" data-annual="374">449 €</span><span class="price-period">/mois</span></div>
-                            <div class="pricing-annual">ou 4 490 €/an <span class="pricing-save">(-20%)</span></div>
-                            <ul class="pricing-features"><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Scans illimités</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>4 agents IA complets</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>5 domaines</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>API & rapports ISO 27001</li></ul>
-                        </div>
-                        <a href="https://calendly.com/brothersai" target="_blank" rel="noopener" class="pricing-cta primary">Choisir Pro →</a>
-                    </article>
-                    <article class="pricing-card reveal">
-                        
-                        <div class="pricing-header">
-                            <h3>On-Premise</h3>
-                            <p class="pricing-target">Grands comptes</p>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="pricing-price"><span class="price-amount">Sur devis</span></div><div class="pricing-annual">À partir de 15 000 €/an</div>
-                            <ul class="pricing-features"><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Déploiement on-premise</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SSO / SAML</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Agents custom</li><li><svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;flex-shrink:0"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>SLA dédié</li></ul>
-                        </div>
-                        <a href="https://calendly.com/brothersai" target="_blank" rel="noopener" class="pricing-cta">Nous contacter →</a>
-                    </article>
-                </div>
-                <p class="pricing-trial reveal">1 scan gratuit sur votre domaine — sans engagement.</p>
             </div>
         </section>
 
@@ -346,7 +322,7 @@
         function anim(){ctx.clearRect(0,0,c.width,c.height);ps.forEach(p=>{p.update();p.draw()});conn();requestAnimationFrame(anim)}anim();
     
         // Pricing toggle
-        const pt=document.getElementById('pricingToggle');
+        const pt=null;// removed
         if(pt){pt.addEventListener('click',function(){
             this.classList.toggle('active');
             const isAnnual=this.classList.contains('active');
